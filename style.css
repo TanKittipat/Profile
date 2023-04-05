@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
+body {
+  background: #ffffff;
+}
+
+.content {
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.card {
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #61707d;
+  transform: scaleY(1);
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #39304a;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+
+.card:hover::after {
+  transform: scaleY(1);
+}
+
+.fonts {
+  margin-top: 2rem;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-list li {
+  padding: 10px;
+  color: #420039;
+  font-size: 26px;
+}
+
+.social-list li i {
+  color: #221919;
+}
+
+.buttons button:nth-child(1) {
+  border: 1px solid #420039 !important;
+  color: #420039;
+  height: 40px;
+}
+
+.buttons button:nth-child(1):hover {
+  border: 1px solid #420039 !important;
+  color: #fff;
+  height: 40px;
+  background-color: #420039;
+}
+
+.buttons button:nth-child(2) {
+  border: 1px solid #420039 !important;
+  background-color: #420039;
+  color: #fff;
+  height: 40px;
+}
